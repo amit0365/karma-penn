@@ -1,8 +1,114 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/ak36/Desktop/badges/contracts/GoofyGoober.sol": {
-      "lastModificationDate": 1676071844294,
+    "/Users/ak36/Desktop/karma-penn/client/contracts/Disperse.sol": {
+      "lastModificationDate": 1676077957809,
+      "contentHash": "eb2c711b37e72752d058ec537397248a",
+      "sourceName": "contracts/Disperse.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OracleInterface.sol",
+        "./Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": []
+    },
+    "/Users/ak36/Desktop/karma-penn/client/contracts/OracleInterface.sol": {
+      "lastModificationDate": 1676077906550,
+      "contentHash": "bdae84dbcd29087550106537bdeeef1d",
+      "sourceName": "contracts/OracleInterface.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "OracleInterface"
+      ]
+    },
+    "/Users/ak36/Desktop/karma-penn/client/contracts/Ownable.sol": {
+      "lastModificationDate": 1676077785362,
+      "contentHash": "ed42c44455a77840bb6b1770402b356f",
+      "sourceName": "contracts/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/ak36/Desktop/karma-penn/client/contracts/GoofyGoober.sol": {
+      "lastModificationDate": 1676077555418,
       "contentHash": "12b7c224eaeee04f36682fe0145c1e6c",
       "sourceName": "contracts/GoofyGoober.sol",
       "solcConfig": {
@@ -38,8 +144,8 @@
         "Karma"
       ]
     },
-    "/Users/ak36/Desktop/badges/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
-      "lastModificationDate": 1676072142527,
+    "/Users/ak36/Desktop/karma-penn/client/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1676077752454,
       "contentHash": "834a0dde221759af42b030253315b086",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
@@ -77,8 +183,8 @@
         "ERC20"
       ]
     },
-    "/Users/ak36/Desktop/badges/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
-      "lastModificationDate": 1676072142574,
+    "/Users/ak36/Desktop/karma-penn/client/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1676077752461,
       "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
@@ -112,8 +218,43 @@
         "IERC20"
       ]
     },
-    "/Users/ak36/Desktop/badges/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
-      "lastModificationDate": 1676072142575,
+    "/Users/ak36/Desktop/karma-penn/client/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1676077752450,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/ak36/Desktop/karma-penn/client/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1676077752461,
       "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
       "solcConfig": {
@@ -147,41 +288,6 @@
       ],
       "artifacts": [
         "IERC20Metadata"
-      ]
-    },
-    "/Users/ak36/Desktop/badges/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1676072142491,
-      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
-      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
-      "solcConfig": {
-        "version": "0.8.17",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Context"
       ]
     }
   }

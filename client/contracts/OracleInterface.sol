@@ -1,6 +1,7 @@
-pragma solidity ^0.4.17;
+//SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
 
-contract OracleInterface {
+abstract contract OracleInterface {
 
     enum MatchOutcome {
         Pending,    //match has not been fought to decision
@@ -9,31 +10,8 @@ contract OracleInterface {
         Decided     //index of participant who is the winner 
     }
 
-    function getPendingMatches() public view returns (bytes32[]);
 
-    function getAllMatches() public view returns (bytes32[]);
+    function testConnection() public pure virtual returns (bool);
 
-    function matchExists(bytes32 _matchId) public view returns (bool); 
-
-    function getMatch(bytes32 _matchId) public view returns (
-        bytes32 id,
-        string name, 
-        string participants,
-        uint8 participantCount,
-        uint date, 
-        MatchOutcome outcome, 
-        int8 winner);
-
-    function getMostRecentMatch(bool _pending) public view returns (
-        bytes32 id,
-        string name, 
-        string participants,
-        uint participantCount,
-        uint date, 
-        MatchOutcome outcome, 
-        int8 winner);
-
-    function testConnection() public pure returns (bool);
-
-    function addTestData() public; 
+    function addTestData() public virtual; 
 }
