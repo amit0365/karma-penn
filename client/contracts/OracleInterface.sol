@@ -1,7 +1,7 @@
 //SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-abstract contract OracleInterface {
+interface OracleInterface {
 
     enum MatchOutcome {
         Pending,    //match has not been fought to decision
@@ -10,8 +10,9 @@ abstract contract OracleInterface {
         Decided     //index of participant who is the winner 
     }
 
+    function getOracleAddress() external view returns (address);
 
-    function testConnection() public pure virtual returns (bool);
+    function testConnection() pure external returns (bool);
 
-    function addTestData() public virtual; 
+    function addTestData() external; 
 }
